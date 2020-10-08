@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'FontOfKindness-Bold';
+  src: url('FontOfKindness-Bold.eot');
+  src: url('FontOfKindness-Bold.eot?#iefix') format('embedded-opentype'),
+       url('FontOfKindness-Bold.svg#FontOfKindness-Bold') format('svg'),
+       url('FontOfKindness-Bold.ttf') format('truetype'),
+       url('FontOfKindness-Bold.woff') format('woff'),
+       url('FontOfKindness-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

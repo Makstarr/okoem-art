@@ -1,0 +1,21 @@
+
+@import "fonts";
+@import "vars";
+@import "fonts";
+@import "global";
+
+.header{
+	background-image: url(../images/milkyway.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	&__logos{
+		background-color: #000;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__picture{
+		width: 100%;
+	}
+}
