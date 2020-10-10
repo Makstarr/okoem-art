@@ -33,7 +33,7 @@
 		display: block;
 		position: absolute;
 		height: 250px;
-		width: 100%; 
+		width: 100%;
 		bottom: -10px;
 		background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 90%);
 		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, 1)));
@@ -416,6 +416,22 @@
 
 	to {
 		background-color: #0f4ddd;
+	}
+}
+
+.picture-on-left {
+	.object__3d-button {
+		right: 0px;
+		top: 0;
+	}
+}
+
+.picture-on-right {
+	flex-direction: row-reverse;
+
+	.object__3d-button {
+		left: 0px;
+		top: 0;
 	}
 }
 

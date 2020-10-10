@@ -446,6 +446,9 @@ body {
 p {
   opacity: 0.8 !important; }
 
+.footer, .header {
+  min-height: 800px; }
+
 .container {
   position: relative;
   max-width: 1300px;
@@ -456,10 +459,9 @@ p {
 @media (max-width: 900px) {
   .container {
     padding: 10px 20px;
-    width: 100%; } }
-
-.footer, .header {
-  min-height: 800px; }
+    width: 100%; }
+  .footer, .header {
+    min-height: 500px; } }
 
 .rose .object__3d-button {
   background-color: #77233E;
@@ -515,16 +517,6 @@ p {
     width: 45%; }
   .ksusha .object__3d-button .object__text {
     width: 50%; }
-
-.picture-on-left .object__3d-button {
-  right: 0px;
-  top: 0; }
-
-.picture-on-right {
-  flex-direction: row-reverse; }
-  .picture-on-right .object__3d-button {
-    left: 0px;
-    top: 0; }
 
 .header {
   padding-top: 5vh;
@@ -804,6 +796,16 @@ p {
     background-color: #8a26ac; }
   to {
     background-color: #0f4ddd; } }
+
+.picture-on-left .object__3d-button {
+  right: 0px;
+  top: 0; }
+
+.picture-on-right {
+  flex-direction: row-reverse; }
+  .picture-on-right .object__3d-button {
+    left: 0px;
+    top: 0; }
 
 @media (max-width: 900px) {
   header,

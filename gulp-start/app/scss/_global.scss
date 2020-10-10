@@ -47,6 +47,10 @@ body {
 p{
     opacity: 0.80!important;
 }
+.footer, .header{
+    min-height: 800px;
+}
+
 .container{
     position: relative;
     max-width: 1300px;
@@ -59,11 +63,11 @@ p{
     .container{
         padding: 10px 20px;
         width: 100%;
-    }
-}
-
-.footer, .header{
-    min-height: 800px;
+	}
+	.footer, .header{
+		min-height: 500px;
+	}
+	
 }
 
 
@@ -170,18 +174,3 @@ p{
 	}
 }
 
-.picture-on-left {
-	.object__3d-button {
-		right: 0px;
-		top: 0;
-	}
-}
-
-.picture-on-right {
-	flex-direction: row-reverse;
-
-	.object__3d-button {
-		left: 0px;
-		top: 0;
-	}
-}
