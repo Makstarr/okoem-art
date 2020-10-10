@@ -521,6 +521,12 @@ p {
     padding: 10px 20px;
     width: 100%;
   }
+
+  .footer,
+  .header {
+    min-height: 500px;
+  }
+
 }
 
 .footer,
@@ -1282,6 +1288,10 @@ p {
     font-size: 20px;
     padding: 20px;
   }
+  .footer,
+  .header {
+    min-height: 400px;
+  }
 
   .footer__contacts-store {
     font-size: 35px;
@@ -1291,5 +1301,11 @@ p {
   .footer__contacts-store i svg {
     height: 30px;
     width: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .footer,
+  .header {
+    min-height: 700px;
   }
 }
