@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    //scroll-behavior: smooth;
+    width: 100vw;
 }
 
 *,
@@ -37,20 +38,150 @@ h6 {
 
 
 body {
-    min-width: 320px;
-    overflow-x: hidden;
-    position: relative;
     background-color: #000;
     color: #fff;
     font-family: 'FontOfKindness-Bold';
     font-style: 17px;
     line-height: 26px;
 }
-
+p{
+    opacity: 0.80!important;
+}
 .container{
     position: relative;
     max-width: 1300px;
     margin: auto;
-    overflow: hidden;
+
     padding: 20px 50px;
+    z-index: 10;
+}
+@media (max-width:900px){
+    .container{
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+.footer, .header{
+    min-height: 800px;
+}
+
+
+
+
+.rose {
+	.object__3d-button {
+		background-color: #77233E;
+		color: #E5DEFA;
+
+		&:hover {
+			background-color: #E5DEFA;
+			color: #77233E;
+		}
+
+	}
+}
+
+.notabunny {
+	.object__3d-button {
+		background-color: #D35FB9;
+		color: #0B0B0B;
+
+		&:hover {
+			background-color: #945d5d;
+			color: #0B0B0B;
+		}
+
+	}
+}
+
+.cat {
+	.object__3d-button {
+		background-color: #516BC0;
+		color: #0B0B0B;
+
+		&:hover {
+			background-color: #96100A;
+			color: #fff;
+		}
+
+	}
+}
+
+.leopard {
+	.object__3d-button {
+		background-color: #96100A;
+		color: #FFFFFF;
+
+		&:hover {
+			background-color: #FFFFFF;
+			color: #96100A;
+		}
+
+	}
+}
+
+.queen {
+	.object__3d-button {
+		background-color: #F5BE4E;
+		color: #3D2927;
+
+		&:hover {
+			background-color: #3D2927;
+			color: #F5BE4E;
+		}
+
+	}
+}
+
+.lemontee {
+	.object__3d-button {
+		background-color: #3C659B;
+		color: #070E12;
+
+		&:hover {
+			background-color: #fff;
+			color: #3C659B;
+			transform: scale(1.3);
+		}
+
+	}
+}
+
+.ksusha {
+	.object__3d-button {
+		background-color: #A62026;
+		color: #FBF1DF;
+
+		&:hover {
+			transform: scale(1.2);
+			background-color: #FBF1DF;
+			color: #A62026;
+		}
+
+		.object__picture {
+			width: 45%;
+		}
+
+		.object__text {
+			width: 50%;
+		}
+
+	}
+}
+
+.picture-on-left {
+	.object__3d-button {
+		right: 0px;
+		top: 0;
+	}
+}
+
+.picture-on-right {
+	flex-direction: row-reverse;
+
+	.object__3d-button {
+		left: 0px;
+		top: 0;
+	}
 }
