@@ -1057,6 +1057,7 @@ p {
 }
 
 @media (max-width: 900px) {
+
   header,
   .header {
     height: 100vh;
@@ -1301,6 +1302,10 @@ p {
     top: 0;
   }
 
+  .object__3d-button:hover {
+    transform: none;
+  }
+
   .header .blue {
     width: 400px;
   }
@@ -1309,30 +1314,33 @@ p {
     width: 160%;
     height: 100%;
     max-height: 1500px;
-    top:0;
+    top: 0;
     animation: spin-right-mob 10s ease-int infinite;
   }
-  @media (min-height:1000px){
-		.header
-			.blue{
-				width: 600px;
-			}
-			.header	.blue-orbit{
-				width: 140%;
-				height: 100%;
-			}
-      .header__title {
-				margin-top: 25px;
-				font-size: 80px;
-				line-height: 95px;
-				text-align: center;
-      }
-      .main__logos img {
-        max-width: 500px;
-        width: 40%;
-        margin: 5%;
-      }
-	}
+
+  @media (min-height:1000px) {
+    .header .blue {
+      width: 600px;
+    }
+
+    .header .blue-orbit {
+      width: 140%;
+      height: 100%;
+    }
+
+    .header__title {
+      margin-top: 25px;
+      font-size: 80px;
+      line-height: 95px;
+      text-align: center;
+    }
+
+    .main__logos img {
+      max-width: 500px;
+      width: 40%;
+      margin: 5%;
+    }
+  }
 }
 
 @media (max-width: 400px) {
