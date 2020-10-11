@@ -1303,7 +1303,7 @@ p {
   }
 
   .object__3d-button:hover {
-    transform: none;
+    transform: none!important;
   }
 
   .header .blue {
