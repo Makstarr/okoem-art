@@ -1207,14 +1207,9 @@ p {
     line-height: 140%;
   }
 
-  .footer__contest-button span {
-    background-color: #ff00aa;
-    animation: none;
-  }
 
   .footer__contest-button span:hover {
     background-color: #ff00aa;
-    animation: none;
   }
 
   .footer__contest-button span:active {
