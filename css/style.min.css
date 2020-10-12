@@ -500,7 +500,7 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'FontOfKindness-Bold';
-  font-style: 17px;
+  font-size: 22px;
   line-height: 26px;
 }
 
@@ -644,15 +644,15 @@ p {
 
 .header__discription {
   margin: auto;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 22px;
   text-align: center;
   opacity: 100%;
 }
 
 .header__title {
   margin-top: 25px;
-  font-size: 78px;
+  font-size: 90px;
   line-height: 98px;
   text-align: center;
 }
@@ -713,7 +713,7 @@ p {
 
 .main__text {
   display: block;
-  font-size: 18px;
+  font-size: 22px;
   padding-bottom: 15px;
 }
 
@@ -838,7 +838,7 @@ p {
 }
 
 .object__text-header {
-  font-size: 64px;
+  font-size: 70px;
   line-height: 77px;
   opacity: 0.8;
 }
@@ -879,15 +879,14 @@ p {
 }
 
 .footer__contest-header {
-  font-size: 78px;
+  font-size: 90px;
   line-height: 98px;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .footer__contest-text {
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 22px;
   width: 70%;
   margin: auto;
 }
@@ -906,7 +905,7 @@ p {
   width: 35%;
   min-width: 280px;
   border-radius: 20px;
-  animation: 4s linear 0s infinite alternate backgrcolorschange;
+  animation: 2s linear 0s infinite alternate backgrcolorschange;
 }
 
 .footer__contest-button span:hover {
@@ -1072,14 +1071,14 @@ p {
 
   header__discription,
   .header__discription {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   header__title,
   .header__title {
-    margin-top: 2vh;
-    font-size: 30px;
+    margin-top: 6vh;
+    font-size: 66px;
     line-height: 55px;
     text-align: center;
   }
@@ -1104,7 +1103,6 @@ p {
 
   .main__text {
     margin: auto;
-    font-size: 16px;
     opacity: 90%;
     max-width: 1200px;
     width: 100%;
@@ -1169,7 +1167,7 @@ p {
 
   .object__text-header {
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     line-height: 45px;
     margin: 20px 0px;
   }
@@ -1194,7 +1192,7 @@ p {
   }
 
   .footer__contest-header {
-    font-size: 60px;
+    font-size: 55px;
     line-height: 70px;
     margin-bottom: 20px;
   }
@@ -1327,11 +1325,14 @@ p {
       width: 140%;
       height: 100%;
     }
-
+    .header__discription{
+      font-size: 30px;
+      line-height: 40px;
+    }
     .header__title {
       margin-top: 25px;
-      font-size: 80px;
-      line-height: 95px;
+      font-size: 100px;
+      line-height: 110px;
       text-align: center;
     }
 
@@ -1344,6 +1345,12 @@ p {
 }
 
 @media (max-width: 400px) {
+  .header__title{
+    font-size: 56px;
+  }
+  .object__text-header{
+    font-size: 32px;
+  }
   .footer__contest-button span {
     font-size: 20px;
     padding: 20px;
@@ -1357,6 +1364,15 @@ p {
   .footer__contacts-store i svg {
     height: 30px;
     width: 30px;
+  }
+  @media (max-height: 600px) {
+
+    .header__title{
+      font-size: 48px;
+    }
+    .header__discription{
+      font-size: 14px;
+    }
   }
 }
 
