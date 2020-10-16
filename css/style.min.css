@@ -1277,6 +1277,9 @@ p {
 }
 
 @media (max-width: 400px) {
+  .header{
+    padding-top: 0;
+  }
   .header__title {
     font-size: 40px;
   }
