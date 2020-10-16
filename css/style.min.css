@@ -421,9 +421,6 @@ p {
 
 @media (max-width: 900px) {
 
-  .object__text-header {
-    font-size: 30px;
-  }
 
   .container {
     padding: 10px 20px;
@@ -1099,8 +1096,8 @@ p {
 
   .object__text-header {
     text-align: center;
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 30px;
+    line-height: 35px;
     margin: 20px 0px;
   }
 
@@ -1286,7 +1283,7 @@ p {
     padding-top: 0;
   }
   .header__title {
-    font-size: 40px;
+    font-size: 35px;
   }
   .header__description {
     font-size: 16px;
