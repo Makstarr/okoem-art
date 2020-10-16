@@ -1096,7 +1096,7 @@ p {
 
   .object__text-header {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 35px;
     margin: 20px 0px;
   }
@@ -1283,7 +1283,7 @@ p {
     padding-top: 0;
   }
   .header__title {
-    font-size: 30px;
+    font-size: 35px;
   }
   .header__description {
     font-size: 16px;
@@ -1306,17 +1306,6 @@ p {
   .footer__contacts-store i svg {
     height: 30px;
     width: 30px;
-  }
-
-  @media (max-height: 600px) {
-
-    .header__title {
-      font-size: 48px;
-    }
-
-    .header__discription {
-      font-size: 14px;
-    }
   }
 }
 
