@@ -420,6 +420,11 @@ p {
 }
 
 @media (max-width: 900px) {
+
+  .object__text-header {
+    font-size: 30px;
+  }
+
   .container {
     padding: 10px 20px;
     width: 100%;
