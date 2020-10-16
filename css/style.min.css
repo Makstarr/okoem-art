@@ -400,10 +400,14 @@ body {
   height: 100%;
 }
 
-p {
+p, a {
   opacity: 0.8 !important;
 }
-
+.link {
+  transition: all .5s;
+  animation: 1s linear 0s infinite alternate colorschange;
+  cursor: pointer;
+}
 .footer,
 .header {
   min-height: calc(700px + 20vh);
@@ -511,7 +515,7 @@ p {
   width: 45%;
 }
 
-.ksusha .object__3d-button .object__text {
+.ksusha .object__3d-button .object__text-block {
   width: 50%;
 }
 
@@ -657,36 +661,24 @@ p {
 
 @keyframes colorschange {
   from {
-    color: #bb4cf2;
+    color: #b952ed;
   }
 
   to {
-    color: #996cf2;
+    color: #6135b9;
   }
 }
 
 .main__video {
   max-width: 1200px;
   width: 100%;
-  height: 500px;
+  height: 400px;
   margin: 50px auto;
-  font-size: 70px;
-  padding: 100px;
-  color: #000;
-  background-color: #383838;
-  animation: 5s linear 0s infinite alternate backcolorschange;
+  overflow: hidden;
   border-radius: 20px;
+  position: relative;
 }
 
-@keyframes backcolorschange {
-  from {
-    background-color: #0e0e0e;
-  }
-
-  to {
-    background-color: #010818;
-  }
-}
 
 .object {
   display: flex;
@@ -694,6 +686,54 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 100vh;
+  align-items: center;
+}
+.object__text-change-btn{
+  display: inline-block;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    background:#496876;
+  box-shadow: 1px 5px 0px 0px #496876c2;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all .5s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.object__text-change-btn:hover,
+.object__text-change-btn:focus {
+  background: #4e7688;
+  box-shadow: 1px 5px 0px 0px #496876c2;
+}
+
+.object__text-change-btn:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.object__text-change-btn:active {
+    transform: scale(0.99);
+    transform: translate(1px, 4px);
+    box-shadow: 0px 0px 0px 0px #496876c2;
+}
+.checked{
+  transform: scale(0.99);
+    transform: translate(1px, 5px);
+  box-shadow: 0px 0px 0px 0px #55397788;
+  background: #553977;
+}
+.checked:hover,
+.checked:focus {
+  transform: scale(0.99);
+    transform: translate(1px, 5px);
+    background: #553977;
+  cursor: default;
+  box-shadow: 0px 0px 0px 0px #1c1c1c;
 }
 
 .object__picture {
@@ -729,7 +769,7 @@ p {
 }
 
 .object__3d-button:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .object__3d-button:hover span {
@@ -746,12 +786,22 @@ p {
   opacity: 0.8;
 }
 
-.object__text {
-  width: 60%;
+.object__text-block {
+  width: 55%;
   min-width: 280px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.object__header {
+  font-size: 60px;
+  line-height: 67px;
+  opacity: 0.8;
+}
+.object__text{
+  position: relative;
 }
 
 .object__text-content {
@@ -760,16 +810,26 @@ p {
   justify-content: center;
 }
 
-.object__text-header {
-  font-size: 60px;
-  line-height: 67px;
-  opacity: 0.8;
+.object__text-block{
+  position: relative;
+  height: 100%;
+}
+.object__text-block div{
+  font-size: 19px;
+  transition: opacity .5s;
+}
+.object__text-block .hidden{
+  opacity: 0;
+}
+.object__text-block .visible{
+  opacity: 1;
 }
 
 .footer {
-  z-index: 21;
+  z-index: 999;
   position: relative;
   background-color: #000;
+  overflow: visible;
 }
 
 .footer__bottom-picture {
@@ -777,7 +837,7 @@ p {
   max-width: 1300px;
   width: 100%;
   margin: auto;
-  z-index: -1;
+  z-index: 1;
 }
 
 .footer__bottom-picture img {
@@ -1033,7 +1093,6 @@ p {
 
   .main__text {
     margin: auto;
-    opacity: 90%;
     max-width: 1200px;
     width: 100%;
   }
@@ -1095,20 +1154,20 @@ p {
     line-height: 17px;
   }
 
-  .object__text-header {
+  .object__header {
     text-align: center;
     font-size: 35px;
     line-height: 35px;
     margin: 20px 0px;
   }
 
-  .object__text {
+  .object__text-block {
     width: 100%;
     padding: 0 5%;
     margin: auto;
   }
 
-  .object__text-author {
+  .object__text-block-author {
     text-align: center;
   }
 
@@ -1290,7 +1349,7 @@ p {
     font-size: 16px;
   }
 
-  .object__text-header {
+  .object__header {
     font-size: 28px;
   }
 
