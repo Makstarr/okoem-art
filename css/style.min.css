@@ -413,7 +413,7 @@ p {
 
 .container {
   position: relative;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: auto;
   padding: 20px 50px;
   z-index: 10;
@@ -515,8 +515,8 @@ p {
 .sides-shadow {
   top: 5vh;
   transition: all .5s;
-  width: 1310px;
-  left: calc(50% - 655px);
+  width: 1302px;
+  left: calc(50% - 651px);
   margin: auto;
   background: none;
   z-index: 20;
@@ -526,7 +526,7 @@ p {
   display: none;
 }
 
-@media (min-width:1300px) {
+@media (min-width:1302px) {
   .sides-shadow {
     display: block;
     background: linear-gradient(90deg, #000000 5%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, #000000 95%);
@@ -572,7 +572,7 @@ p {
 
 .header__title {
   margin-top: 25px;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 59px;
   text-align: center;
 }
@@ -633,7 +633,7 @@ p {
 
 .main__text {
   display: block;
-  font-size: 22px;
+  font-size: 18px;
   padding-bottom: 15px;
 }
 
@@ -758,8 +758,8 @@ p {
 }
 
 .object__text-header {
-  font-size: 70px;
-  line-height: 77px;
+  font-size: 60px;
+  line-height: 67px;
   opacity: 0.8;
 }
 
@@ -771,10 +771,10 @@ p {
 
 .footer__bottom-picture {
   position: relative;
-  z-index: 1;
-  max-width: 1500px;
+  max-width: 1300px;
   width: 100%;
   margin: auto;
+  z-index: -1;
 }
 
 .footer__bottom-picture img {
@@ -1005,7 +1005,7 @@ p {
   header__title,
   .header__title {
     margin-top: 6vh;
-    font-size: 66px;
+    font-size: 50px;
     line-height: 55px;
     text-align: center;
   }
@@ -1094,8 +1094,8 @@ p {
 
   .object__text-header {
     text-align: center;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 50px;
+    line-height: 55px;
     margin: 20px 0px;
   }
 
@@ -1278,11 +1278,14 @@ p {
 
 @media (max-width: 400px) {
   .header__title {
-    font-size: 56px;
+    font-size: 40px;
+  }
+  .header__description {
+    font-size: 16px;
   }
 
   .object__text-header {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .footer__contest-button span {
