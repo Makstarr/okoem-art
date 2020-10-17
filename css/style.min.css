@@ -372,6 +372,12 @@ a {
 button {
   color: inherit;
 }
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
 
 ul,
 li {
@@ -608,7 +614,7 @@ p, a {
 
 .main {
   background-color: #000;
-  z-index: 999;
+  z-index: 900;
   position: relative;
 }
 
@@ -689,6 +695,8 @@ p, a {
   align-items: center;
 }
 .object__text-change-btn{
+  z-index: 999;
+  position: relative;
   display: inline-block;
     border: none;
     padding: 0.5rem 1rem;
